@@ -8,8 +8,14 @@ mainTest:
 	gcc mainInAsm.o -o mainInAsm
 	./mainInAsm
 
-factorial:
+numeros:
 	nasm -felf numeros.asm
 	gcc -c numerosMain.c
 	gcc numeros.o numerosMain.o -o numeros
 	./numeros
+
+robotarm:
+	nasm -felf robotasm.asm
+	gcc -c robotarm.c -lGL -lGLU -lglut
+	gcc robotarm.o robotasm.o -lGL -lGLU -lglut -o robotarm
+	./robotarm

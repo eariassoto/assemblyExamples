@@ -2,3 +2,7 @@ god.out
 *.o
 mainInAsm
 numeros
+*.asm~
+Makefile~
+*.o~
+*.c~

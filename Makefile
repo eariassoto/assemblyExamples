@@ -13,3 +13,9 @@ numeros:
 	gcc -c numerosMain.c
 	gcc numeros.o numerosMain.o -o numeros
 	./numeros
+
+r:
+	nasm -felf robotasm.asm
+	gcc -c robotarm.c -lGL -lGLU -lglut
+	gcc robotarm.o robotasm.o -lGL -lGLU -lglut -o robotarm
+	./robotarm

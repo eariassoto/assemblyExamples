@@ -1,6 +1,0 @@
-extern factorial(int);
-
-int main(){
-	factorial(33);
-	return 0;
-}
